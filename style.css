@@ -527,3 +527,56 @@ img { height:auto; }
 }
 .dark .hero .quick-links a span { color: #f7f8ef !important; }
 .dark .hero .quick-links a:hover { background: #496447 !important; }
+
+/* Artifact 2 links: minimal styling only */
+.hatchquest-links { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:12px; font-size:.82rem; font-weight:700; }
+.hatchquest-links a { color:var(--green-dark); text-decoration:underline; text-underline-offset:3px; }
+.dark .hatchquest-links a { color:#d6e8cb; }
+
+/* Added standalone About and Projects pages. Home layout remains unchanged. */
+.cozy-page { min-height:100vh; background:#f7f6e8 url('about-meadow-background.png') center center / cover fixed no-repeat; }
+.cozy-page .sitebar { background:rgba(250,251,237,.94); backdrop-filter:blur(8px); }
+.cozy-page-wrap { min-height:calc(100vh - 130px); display:flex; align-items:center; justify-content:center; padding:24px 16px 30px; }
+.computer-window { width:min(850px,96vw); border:2px solid #66845b; border-radius:17px; overflow:hidden; background:#f8f8e9; box-shadow:0 16px 38px #334b2e36; }
+.computer-titlebar,.project-windowbar { min-height:38px; display:flex; align-items:center; gap:10px; padding:7px 13px; color:#fffdf0; background:linear-gradient(90deg,#557c4c,#75996a); font-weight:900; }
+.window-icon { display:grid; place-items:center; width:23px; height:23px; background:#e7f0d9; color:#52784b; border-radius:7px; }
+.window-controls { margin-left:auto; display:flex; gap:6px; }
+.window-controls i { display:grid; place-items:center; width:22px; height:20px; border-radius:5px; background:#f5f4e5; color:#496d42; font-size:12px; font-style:normal; }
+.computer-screen { display:grid; grid-template-columns:minmax(0,1fr) 155px; gap:22px; padding:24px 28px 20px; background:rgba(251,251,237,.9); }
+.screen-copy { min-width:0; }
+.screen-copy .eyebrow { font-size:.68rem; margin-bottom:5px; }
+.screen-copy h1 { font-family:'Patrick Hand',sans-serif; color:#365b35; font-size:clamp(1.7rem,3vw,2.35rem); line-height:1; margin:3px 0 6px; }
+.about-subtitle { font-size:.78rem; font-weight:900; margin:0 0 12px; }
+.about-subtitle span { color:#77996b; padding:0 4px; }
+.blog-note { padding:13px 15px; border:1px solid #d4e1c8; border-radius:10px; background:#fffdf3; box-shadow:0 3px 0 #e4ebd9; font-size:.78rem; line-height:1.55; }
+.blog-note h2 { font-family:'Patrick Hand',sans-serif; color:#42683d; font-size:1.25rem; margin:0 0 5px; }
+.blog-note p { margin:7px 0; }
+.blog-note .signoff { color:#557b4c; font-weight:900; margin-bottom:0; }
+.desktop-widget { display:flex; flex-direction:column; align-items:center; gap:5px; padding-top:12px; }
+.desktop-widget>img { width:125px; height:125px; object-fit:cover; border:5px solid #fffdf4; border-radius:12px; box-shadow:0 4px 10px #314c2b22; }
+.widget-caption { font-size:.68rem; font-weight:800; }
+.sticky-note { width:125px; min-height:100px; margin-top:10px; padding:10px 9px; background:#f1efc9; border:1px solid #ded9a7; box-shadow:2px 4px 7px #3a4c2b1c; transform:rotate(2deg); text-align:center; font-size:.73rem; }
+.sticky-note span { font-weight:900; color:#557b4c; }
+.sticky-note p { margin:7px 0; }
+.computer-status { display:flex; justify-content:space-between; gap:10px; padding:7px 13px; background:#e8efdc; color:#496c43; border-top:1px solid #d1dfc5; font-size:.65rem; font-weight:900; }
+.back-home { display:block; width:max-content; margin:0 auto; padding:8px 17px; border:1px solid #c8d9bb; border-radius:22px; background:#fbfbeded; color:#42683d; font-weight:900; }
+.projects-page-wrap { min-height:calc(100vh - 130px); display:grid; place-items:center; padding:30px 16px; }
+.future-projects-card { width:min(620px,95vw); overflow:hidden; border:2px solid #66845b; border-radius:16px; background:#fbfbeded; box-shadow:0 16px 38px #334b2e36; text-align:center; }
+.project-windowbar { text-align:left; }
+.future-projects-content { padding:42px 32px 38px; }
+.project-flower { font-size:3rem; margin-bottom:8px; }
+.future-projects-content .eyebrow { font-size:.75rem; }
+.future-projects-content h1 { font-family:'Patrick Hand',sans-serif; color:#365b35; font-size:clamp(2rem,5vw,3rem); line-height:1; margin:10px 0; }
+.future-projects-content p { max-width:430px; margin:10px auto; }
+.future-note { color:#557b4c; font-weight:900; }
+.cozy-page footer { margin:0 1.2%; background:#fafbeded; border-radius:12px 12px 0 0; }
+.cozy-page.dark { background-color:#243527; }
+.cozy-page.dark .sitebar,.cozy-page.dark .computer-window,.cozy-page.dark .future-projects-card { background-color:#2b4030; color:#e6efd9; }
+.cozy-page.dark .computer-screen { background:rgba(43,64,48,.94); }
+.cozy-page.dark .screen-copy h1,.cozy-page.dark .future-projects-content h1 { color:#e0ecd5; }
+.cozy-page.dark .blog-note { background:#344b37; border-color:#526e4b; color:#f0f3e8; }
+.cozy-page.dark .blog-note h2,.cozy-page.dark .blog-note .signoff { color:#d7e8c8; }
+.cozy-page.dark .sticky-note { background:#414a32; border-color:#6d794d; }
+.cozy-page.dark .computer-status { background:#354c37; color:#e0ecd5; }
+.cozy-page.dark .back-home,.cozy-page.dark .cozy-page footer { background:#2d4331; color:#e4eed8; }
+@media(max-width:600px) { .computer-screen { grid-template-columns:1fr; padding:18px; gap:10px; } .desktop-widget { display:grid; grid-template-columns:80px 1fr; justify-items:start; padding-top:0; } .desktop-widget>img { width:75px; height:75px; grid-row:span 2; } .widget-caption { align-self:end; } .sticky-note { width:100%; min-height:0; margin-top:3px; transform:none; } .computer-status { flex-wrap:wrap; } .future-projects-content { padding:30px 20px; } .cozy-page .sitebar { height:auto; min-height:60px; padding:10px; gap:8px; flex-wrap:wrap; } .cozy-page nav { gap:4px; } .cozy-page nav a { padding:5px 8px; } }
