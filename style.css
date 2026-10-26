@@ -580,3 +580,7 @@ img { height:auto; }
 .cozy-page.dark .computer-status { background:#354c37; color:#e0ecd5; }
 .cozy-page.dark .back-home,.cozy-page.dark .cozy-page footer { background:#2d4331; color:#e4eed8; }
 @media(max-width:600px) { .computer-screen { grid-template-columns:1fr; padding:18px; gap:10px; } .desktop-widget { display:grid; grid-template-columns:80px 1fr; justify-items:start; padding-top:0; } .desktop-widget>img { width:75px; height:75px; grid-row:span 2; } .widget-caption { align-self:end; } .sticky-note { width:100%; min-height:0; margin-top:3px; transform:none; } .computer-status { flex-wrap:wrap; } .future-projects-content { padding:30px 20px; } .cozy-page .sitebar { height:auto; min-height:60px; padding:10px; gap:8px; flex-wrap:wrap; } .cozy-page nav { gap:4px; } .cozy-page nav a { padding:5px 8px; } }
+
+/* Artifact 3 access note */
+.claude-disclaimer { font-size: .82rem; line-height: 1.45; padding: 10px 12px; margin-top: 10px; border-left: 3px solid #9aac87; background: rgba(225, 235, 215, .55); border-radius: 0 8px 8px 0; }
+.dark .claude-disclaimer { background: rgba(45, 65, 48, .75); color: var(--ink); }
