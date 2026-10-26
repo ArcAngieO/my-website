@@ -584,3 +584,14 @@ img { height:auto; }
 /* Artifact 3 access note */
 .claude-disclaimer { font-size: .82rem; line-height: 1.45; padding: 10px 12px; margin-top: 10px; border-left: 3px solid #9aac87; background: rgba(225, 235, 215, .55); border-radius: 0 8px 8px 0; }
 .dark .claude-disclaimer { background: rgba(45, 65, 48, .75); color: var(--ink); }
+
+
+/* Artifact 3 project reflection dropdown */
+.artifact-reflection-dropdown { margin-top: 12px; border: 1px solid #cbd9bd; border-radius: 10px; background: rgba(247, 250, 239, .85); overflow: hidden; }
+.artifact-reflection-dropdown summary { cursor: pointer; padding: 11px 13px; color: #42683d; font-weight: 900; list-style: none; }
+.artifact-reflection-dropdown summary::-webkit-details-marker { display: none; }
+.artifact-reflection-dropdown summary::after { content: "+"; float: right; font-weight: 900; }
+.artifact-reflection-dropdown[open] summary::after { content: "−"; }
+.artifact-reflection-dropdown > p { margin: 0; padding: 0 13px 13px; line-height: 1.6; }
+.dark .artifact-reflection-dropdown { background: rgba(45, 65, 48, .75); border-color: #526e4b; color: var(--ink); }
+.dark .artifact-reflection-dropdown summary { color: #d7e8c8; }
